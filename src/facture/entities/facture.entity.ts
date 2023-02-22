@@ -3,6 +3,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 export class Facture {
   @PrimaryGeneratedColumn()
   public id: number;
+  @Column()
   public prix_ht: number;
   @Column()
   public montant_fodec: number;
