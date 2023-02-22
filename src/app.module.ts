@@ -12,16 +12,16 @@ import { FactureModule } from './facture/facture.module';
       type: 'postgres',
       host: 'localhost',
       port: 5432,
-      username: 'admin',
+      username: 'postgres',
       password: 'admin',
       database: 'pfe',
       autoLoadEntities: true,
       synchronize: true,
     }),
-    /*TypeOrmModule.forFeature([Facture]),*/
+    FactureModule,
   ],
 
-  /* controllers: [AppController],
-  providers: [AppService],*/
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
