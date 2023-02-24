@@ -10,7 +10,8 @@ export class FactureService {
     private FactureRepository: Repository<Facture>,
   ) {}
   create(facture: Facture): Promise<Facture> {
-    return this.FactureRepository.save(facture);
+    return;
+    this.FactureRepository.save(facture);
   }
 
   findAll(): Promise<Facture[]> {
