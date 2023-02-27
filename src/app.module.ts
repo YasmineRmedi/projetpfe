@@ -11,7 +11,7 @@ import { DeclarationModule } from './declaration/declaration.module';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
+    ConfigModule.forRoot(/*{
       type: 'postgres',
       host: 'localhost',
       port: 5432,
@@ -20,7 +20,7 @@ import { DeclarationModule } from './declaration/declaration.module';
       database: 'pfe',
       autoLoadEntities: true,
       synchronize: true,
-    }),
+    }*/),
     FactureModule,
     SubscriberModule,
     CompanyModule,
